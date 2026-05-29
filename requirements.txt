@@ -1,7 +1,7 @@
 # Core ML Frameworks
-torch==2.1.0
-torchvision==0.16.0
-tensorflow==2.14.0
+torch==2.6.0
+torchvision==0.21.0
+tensorflow==2.16.2
 transformers==4.35.0
 
 # Data Processing
@@ -44,10 +44,10 @@ opencv-python==4.8.1.78
 # Distributed Computing
 dill>=0.3.0,<0.4
 ray[default]>=2.8.0
-horovod==0.28.1
+horovod==0.28.1; platform_system != "Windows"
 
 # Model Serving
-onnx==1.15.0
+onnx==1.16.2
 onnxruntime==1.16.3
 
 # Feature Store

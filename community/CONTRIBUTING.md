@@ -86,7 +86,7 @@ Thank you for your interest in contributing! This document provides guidelines f
 
 ```python
 # ✅ Good: Clear, commented, follows TODO pattern
-def train_model(config: ModelConfig) -> TrainedModel:
+def train_model(config: ModelConfig)  TrainedModel:
     """
     Train ML model with given configuration.
 

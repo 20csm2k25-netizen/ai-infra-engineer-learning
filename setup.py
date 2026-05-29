@@ -10,7 +10,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name="ai-infra-engineer-learning",
-    version="0.1.0",
+    version="1.1.0",
     author="AI Infrastructure Learning",
     description="Comprehensive learning path for AI Infrastructure Engineers",
     long_description=long_description,

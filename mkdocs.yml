@@ -1,0 +1,86 @@
+site_name: AI Infrastructure Engineer Learning Path
+site_description: Complete learning path for becoming an AI Infrastructure Engineer
+site_url: https://ai-infra-curriculum.github.io/ai-infra-engineer-learning/
+repo_url: https://github.com/ai-infra-curriculum/ai-infra-engineer-learning
+repo_name: ai-infra-curriculum/ai-infra-engineer-learning
+edit_uri: edit/main/docs/
+docs_dir: ./
+site_dir: ./site
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+  - awesome-pages
+  - glightbox
+
+markdown_extensions:
+  - pymdownx.arithmatex
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: README.md
+  - Getting Started: GETTING_STARTED.md
+  - Prerequisites: PREREQUISITES.md
+  - Curriculum Overview: CURRICULUM.md
+  - Lessons:
+      - '101 - Foundations': 'lessons/mod-101-foundations/README.md'
+      - '102 - Cloud Computing': 'lessons/mod-102-cloud-computing/README.md'
+      - '103 - Containerization': 'lessons/mod-103-containerization/README.md'
+      - '104 - Kubernetes': 'lessons/mod-104-kubernetes/README.md'
+      - '105 - Data Pipelines': 'lessons/mod-105-data-pipelines/README.md'
+      - '106 - MLOps': 'lessons/mod-106-mlops/README.md'
+      - '107 - GPU Computing': 'lessons/mod-107-gpu-computing/README.md'
+      - '108 - Monitoring & Observability': 'lessons/mod-108-monitoring-observability/README.md'
+      - '109 - Infrastructure as Code': 'lessons/mod-109-infrastructure-as-code/README.md'
+      - '110 - LLM Infrastructure': 'lessons/mod-110-llm-infrastructure/README.md'
+  - Projects:
+      - '101 - Basic Model Serving': 'projects/project-101-basic-model-serving/README.md'
+      - '102 - MLOps Pipeline': 'projects/project-102-mlops-pipeline/README.md'
+      - '103 - LLM Deployment': 'projects/project-103-llm-deployment/README.md'
+  - Assessments: 'assessments/README.md'
+  - Resources: 'resources/README.md'
+  - Community: 'community/README.md'
+  - Code of Conduct: 'CODE_OF_CONDUCT.md'
+  - Contributing: 'CONTRIBUTING.md'
+  - License: 'LICENSE'
